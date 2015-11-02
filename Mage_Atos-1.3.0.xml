@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mage_Atos</name>
+    <version>1.3.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>ATOS/Sips extension</summary>
+    <description>The extension provides ATOS/Sips payment integration. Allows make payments through ATOS/Sips methods.
+
+Special thanks to ryu007 for first release.
+
+Changelog :
+1.3
+- Support 1Euro.com paiement (thanks to Fabien)
+- Possibility to add a template file (thanks to GrG)
+- selectable order status on placing order
+- selectable order status on payment success
+- selectable order status on payment failure
+- selectable order status on customer cancellation
+- bug fixed when browser previous button is used (thanks to S&#xE9;bastien)
+
+1.2.2
+- Fixed Atos server error when register
+
+1.2.1
+- Fixed Atos server error
+
+1.2
+- Magento 1.4 compatible
+- Stable version
+
+1.1.3
+- Adminhtml templates
+- Credit cards selection with radio, text or icon
+- W3C Compliant
+
+1.1.2 Customization data
+
+1.1.1 Credit cards selection in payment section
+
+1.1.0 Second release from ryu007
+
+1.0.0 First release from ryu007</description>
+    <notes>1.3
+- Support 1Euro.com paiement (thanks to Fabien)
+- Possibility to add a template file (thanks to GrG)
+- selectable order status on placing order
+- selectable order status on payment success
+- selectable order status on payment failure
+- selectable order status on customer cancellation
+- bug fixed when browser previous button is used (thanks to S&#xE9;bastien)
+1.2.2
+- Fixed Atos server error when register
+1.2.1
+- Fixed Atos server error
+1.2
+- Magento 1.4 compatible
+- Stable version
+1.1.3
+- Adminhtml templates
+- Credit cards selection with radio, text or icon
+- W3C Compliant
+1.1.2 Customization data
+1.1.1 Credit cards selection in payment section
+1.1.0 Second release from ryu007
+1.0.0 First release from ryu007</notes>
+    <authors><author><name>Quadra Team</name><user>auto-converted</user><email>magento@quadra-informatique.fr</email></author></authors>
+    <date>2010-04-12</date>
+    <time>07:23:35</time>
+    <contents><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="payment"><dir name="info"><file name="atos.phtml" hash="379785c1017ca4a01919843d33c38181"/><file name="atos_aurore.phtml" hash="379785c1017ca4a01919843d33c38181"/><file name="atos_euro.phtml" hash="cc5970ddf3f6570a0080fedb6ed368ad"/><file name="atos_several.phtml" hash="379785c1017ca4a01919843d33c38181"/></dir></dir></dir></dir></dir></dir><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="payment"><dir name="form"><file name="atos.phtml" hash="c9578c72e2afc157343de5fb458c9cb2"/><file name="atos_aurore.phtml" hash="b9b19db8bb9176a29d4a62e16f7653ae"/><file name="atos_euro.phtml" hash="d3651441a86478b542a5473239099e1f"/><file name="atos_several.phtml" hash="d624382b20a1cd0c5435c9bb9d2d4db5"/></dir><dir name="info"><file name="atos.phtml" hash="5bbfc6bd2127ea41d1850e11742b552d"/><file name="atos_aurore.phtml" hash="097ca825838cdcde4db73743da670e55"/><file name="atos_euro.phtml" hash="99103a033ec62c27a410078241be94ac"/><file name="atos_several.phtml" hash="5bbfc6bd2127ea41d1850e11742b552d"/></dir></dir></dir></dir></dir></dir></target><target name="magemedia"><dir name="atos"><file name="1EUROCOM.gif" hash="9d849fe9bd51dc07d0106c63f3ade4bd"/><file name="AE.gif" hash="6c43e42b418fe44754275c754245da98"/><file name="AMEX.gif" hash="6c43e42b418fe44754275c754245da98"/><file name="AURORE.gif" hash="916859e19cf2d675968b7264c49ce94f"/><file name="CB.gif" hash="2da9dcb4f9e8f6433ca0a512c2054a57"/><file name="CLEF.gif" hash="9e23fd410a2465fc00683440329d8ee9"/><file name="INTERVAL.gif" hash="f4d4648a54ecb533baeb2eea7b7718bc"/><file name="MASTERCARD.gif" hash="c357201ef569fc4c1a223ec3ee602e61"/><file name="MC.gif" hash="c357201ef569fc4c1a223ec3ee602e61"/><file name="VI.gif" hash="5e6e833c300600794a1011d6519173ec"/><file name="VISA.gif" hash="5e6e833c300600794a1011d6519173ec"/></dir></target><target name="magelocale"><dir name="fr_FR"><file name="Mage_Atos.csv" hash="203a7eea777f606298a1e3c2d15ac768"/></dir></target><target name="mage"><dir name="lib"><dir name="atos"><file name=".htaccess" hash="0492f8fa9bf3595202ac40f169c78a5a"/></dir></dir></target><target name="magelocal"><dir name="Mage"><dir name="Atos"><dir name="Block"><dir name="Aurore"><file name="Form.php" hash="c3e5fcb3ac011727aa6dba9dfc45d6d6"/><file name="Info.php" hash="ae04a5a6cd95051fb4ef3eb6275617f5"/><file name="Redirect.php" hash="0bd545bd9aec3f47dde62799489f2ffd"/></dir><dir name="Euro"><file name="Form.php" hash="3e58858e61f1bd02753d889f7c2c7cf0"/><file name="Info.php" hash="c75a5ac12477b71601214819daccb7b6"/><file name="Redirect.php" hash="ce0b443d0ce2809ebaa9fa60b96996a5"/></dir><dir name="Several"><file name="Form.php" hash="82ab61cf0561e94a4de9f1fee2d98cb4"/><file name="Info.php" hash="b96bbc866382504e9ca9ec0ce702ebd8"/><file name="Redirect.php" hash="87f0b8d809c990bb74427d1de63856fb"/></dir><dir name="Standard"><file name="Form.php" hash="b2d13e69dd552373d3c41fcd3a83159b"/><file name="Info.php" hash="84437056bda10c1d61fab67ac64b3889"/><file name="Redirect.php" hash="0053c5f6a2cac271ff02e68a0125761a"/></dir></dir><dir name="controllers"><file name="AuroreController.php" hash="d4125aa6420d74c9fe3fb5cd9ed93eb7"/><file name="EuroController.php" hash="1e53427b9ea73dc4f65eac8de0b30be6"/><file name="SeveralController.php" hash="83a957c1d2ddacfbec690567894fbf0b"/><file name="StandardController.php" hash="bcc5884648fe9143a4e89b298161a20e"/></dir><dir name="etc"><file name="config.xml" hash="54877b464e02182377a8d87f34dea449"/><file name="system.xml" hash="690c1259d4024d97db4c736bb0f8d4d8"/></dir><dir name="Helper"><file name="Data.php" hash="c796c15613a0a989f0419ec1a26c3607"/></dir><dir name="Model"><dir name="Api"><file name="Debug.php" hash="3f4061211182523f65940e6745b4be8a"/><file name="Files.php" hash="bdab8900107b57c2376f4dacbcd7e1db"/><file name="Parameters.php" hash="7149c19122b3b13fc8ce2effa004b23b"/><file name="Request.php" hash="cfb89e3e8978cdee5d13d3a9d6e94a15"/><file name="Response.php" hash="c1ecdf6fed0b7a8e42925b4d77cf2ccd"/></dir><dir name="Method"><file name="Aurore.php" hash="d8f0df95d2bdbdc3b802d7f8239e2223"/><file name="Euro.php" hash="dc3350e1e33255b28008e181b3a1c156"/><file name="Several.php" hash="bcae7c5d3b7be055ef4050459b2c1fe2"/><file name="Standard.php" hash="68cd9ba6c59021c4e85c77d745b0d86f"/></dir><dir name="Mysql4"><file name="Setup.php" hash="7b3abcd4a50e5339767b55ba9f335d7b"/></dir><dir name="Source"><file name="Capturemode.php" hash="7162462940ee0ee258ed6b37110af695"/><file name="Creditcard.php" hash="be5215ba7333e72a34bbde20efc8e65c"/><file name="Datafield.php" hash="e15b231ed7c064f724fdf89957b70346"/><file name="Merchantid.php" hash="a97e9703317842e9d7fc66bde7cd49cb"/><file name="Numberofpayment.php" hash="b3293c44181e8990a6499d084a13f73e"/></dir><dir name="System"><dir name="Config"><dir name="Source"><dir name="Order"><dir name="Status"><file name="Accepted.php" hash="66d5251400feb7ae3596025ad0b908a5"/><file name="Canceled.php" hash="2f3bc56ee846d1379bbd1b225431c7ae"/><file name="New.php" hash="1c4c5e4a753605a391242ed2d542fb0a"/><file name="Refused.php" hash="9480556f6b4beebea8cacff688ffa99f"/></dir><file name="Status.php" hash="98bec73afb819d61f9ec6f03fd54449a"/></dir></dir></dir></dir><file name="Abstract.php" hash="76b1b8043c2e34bf1ef0c2302731c15b"/><file name="Config.php" hash="6b2892c57551a5efc5f28d65c42da813"/><file name="Session.php" hash="a1b2860a4ba3ebe245c3889e16b1bfe4"/></dir><dir name="sql"><dir name="atos_setup"><file name="mysql4-install-1.1.1.php" hash="233b9daa39789a825de35bbaa8e87010"/><file name="mysql4-uninstall-1.1.1.php" hash="49ebd8572e4aaa7cd1ad744e49f75682"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mage_Atos.xml" hash="d5eec21790dc67c8ae425263211b2fe9"/></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

@@ -1,0 +1,41 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category   design_default
+ * @package    Mage
+ * @copyright  Quadra Informatique - Nicolas FISCHER (nico5)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+<?php $_code = $this->getMethodCode(); ?>
+<fieldset class="form-list">
+  	<?php $cards = $this->getCreditCardsAccepted(); ?>
+  	<?php if($cards): ?>
+    <ul id="payment_form_<?php echo $_code ?>" style="display:none">
+        <li>
+          	<div class="input-box">
+              	<?php echo $this->__('Select your credit card') ?>
+            </div>
+        </li>
+        <li>
+      	<?php foreach($cards as $key => $value): ?>
+            <input id="<?php echo $_code ?>_atos_cc_<?php echo $key ?>" class="atos_cc validate-one-required" type="radio" name="payment[cc_type]" value="<?php echo $key ?>" />
+            <a href="javascript:;" onclick="document.getElementById('<?php echo $_code ?>_atos_cc_<?php echo $key ?>').checked=true;"><img style="vertical-align:middle;" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'atos/' . $key ?>.gif" alt="<?php echo $value ?>" /></a>
+            <label style="float: none;" for="<?php echo $_code ?>_atos_cc_<?php echo $key ?>"><?php echo $value ?></label>
+            <div style="margin-bottom:6px;"></div>
+      	<?php endforeach; ?>
+      	</li>
+    </ul>
+    <?php endif; ?>
+</fieldset>
